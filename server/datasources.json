@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "CustomerDS": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "ABC_customer_records",
+    "username": "developer",
+    "password": "developer",
+    "name": "CustomerDS",
+    "connector": "mongodb",
+    "allowExtendedOperators": true
+  }
+}

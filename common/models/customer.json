@@ -1,0 +1,44 @@
+{
+  "name": "customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "forceId": true,
+  "properties": {
+    "customerId": {
+      "type": "string",
+      "id": true,
+      "generated": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "referralId": {
+      "type": "string"
+    },
+    "payback": {
+      "type": "number",
+      "default": 0
+    },
+    "isAmbassador": {
+      "type": "boolean",
+      "default": false
+    },
+    "joiningDate": {
+      "type": "date",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+  ],
+  "methods": {}
+}
