@@ -4,22 +4,22 @@
 
 Run the command ```npm install``` to install dependencies
 
-Update the file "server/datasources.json". Set the host, port,database,user and password to appropriate values
+Update the file ```server/datasources.json```. Set the host, port,database,user and password to appropriate values
 
-Run the command ```node .``` to start the server. This will start the server at localhost:3000. Open localhost:3000/explorer to test the apis
+Run the command ```node .``` to start the server. This will start the server at ```http://localhost:3000```. Open ```http://localhost:3000/explorer``` to test the apis
 
 
 ###API documentation###
 
-#### /customers/addCustomer ####
-Type: POST
-Request Body:
+1. /customers/addCustomer
+...Type: POST
+...Request Body:
 ``` 
 {
 	"email": "user@example.com"
 }
 ```
-Response Body:
+...Response Body:
 ```
 {
   "customer": {
@@ -34,15 +34,15 @@ Response Body:
   "message": "string"
 }
 ```
-#### /customers/getCustomerById ####
-Type: POST
-Request Body: 
+2. /customers/getCustomerById
+...Type: POST
+...Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-Response Body:
+...Response Body:
 ```
 {
   "customerId": "string",
@@ -54,16 +54,16 @@ Response Body:
   "lastUpdated": "2016-12-26"
 }
 ```
-#### /customers/addReferral ####
-Type: POST
-Request Body: 
+3. /customers/addReferral
+...Type: POST
+...Request Body: 
 ```
 {
   "email": "string",
   "referralId": "string"
 }
 ```
-Response Body:
+...Response Body:
 ```
 {
   "customer": {
@@ -78,17 +78,15 @@ Response Body:
   "message": "string"
 }
 ```
-
-
-#### /customers/fetchAllChildren ####
-Type: POST
-Request Body: 
+4./customers/fetchAllChildren
+...Type: POST
+...Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-Response Body:
+...Response Body:
 ```
 [
   {
@@ -103,16 +101,15 @@ Response Body:
   ...
 ]
 ```
-
-#### /customers/fetchAllCustomerWithReferralCount ####
-Type: POST
-Request Body: 
+5. /customers/fetchAllCustomerWithReferralCount
+...Type: POST
+...Request Body: 
 ```
 {
   "order": "string" //"asc" or "desc"
 }
 ```
-Response Body:
+...Response Body:
 ```
 [
   {
@@ -128,16 +125,15 @@ Response Body:
   ...
 ]
 ```
-
-#### /customers/addAmbassador ####
-Type: POST
-Request Body: 
+6. /customers/addAmbassador
+...Type: POST
+...Request Body: 
 ```
 {
   "email": "string"
 }
 ```
-Response Body:
+...Response Body:
 ```
 {
   "customer": {
@@ -152,16 +148,15 @@ Response Body:
   "message": "string"
 }
 ```
-
-#### /customers/convertCustomerToAmbassador ####
-Type: POST
-Request Body: 
+7. /customers/convertCustomerToAmbassador
+...Type: POST
+...Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-Response Body:
+...Response Body:
 ```
 {
   "customer": {
@@ -176,16 +171,15 @@ Response Body:
   "message": "string"
 }
 ```
-
-#### /customers/fetchAllAmbassadorChildren ####
-Type: POST
-Request Body: 
+8./customers/fetchAllAmbassadorChildren
+...Type: POST
+...Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-Response Body:
+...Response Body:
 ```
 [
   {
@@ -200,17 +194,16 @@ Response Body:
   ...
 ]
 ```
-
-#### /customers/fetchAllAmbassadorChildrenAtNthLevel ####
-Type: POST
-Request Body: 
+9./customers/fetchAllAmbassadorChildrenAtNthLevel
+...Type: POST
+...Request Body: 
 ```
 {
   "customerId": "string",
   "level": 0
 }
 ```
-Response Body:
+...Response Body:
 ```
 [
   {
