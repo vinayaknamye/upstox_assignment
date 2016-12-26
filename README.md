@@ -12,14 +12,17 @@ Run the command ```node .``` to start the server. This will start the server at 
 ###API documentation###
 
 1. /customers/addCustomer
-...Type: POST
-...Request Body:
+
+Type: POST
+
+Request Body:
 ``` 
 {
 	"email": "user@example.com"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 {
   "customer": {
@@ -34,15 +37,19 @@ Run the command ```node .``` to start the server. This will start the server at 
   "message": "string"
 }
 ```
+
 2. /customers/getCustomerById
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 {
   "customerId": "string",
@@ -54,16 +61,20 @@ Run the command ```node .``` to start the server. This will start the server at 
   "lastUpdated": "2016-12-26"
 }
 ```
+
 3. /customers/addReferral
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "email": "string",
   "referralId": "string"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 {
   "customer": {
@@ -78,15 +89,19 @@ Run the command ```node .``` to start the server. This will start the server at 
   "message": "string"
 }
 ```
+
 4./customers/fetchAllChildren
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 [
   {
@@ -101,15 +116,19 @@ Run the command ```node .``` to start the server. This will start the server at 
   ...
 ]
 ```
+
 5. /customers/fetchAllCustomerWithReferralCount
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "order": "string" //"asc" or "desc"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 [
   {
@@ -125,15 +144,19 @@ Run the command ```node .``` to start the server. This will start the server at 
   ...
 ]
 ```
+
 6. /customers/addAmbassador
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "email": "string"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 {
   "customer": {
@@ -148,15 +171,19 @@ Run the command ```node .``` to start the server. This will start the server at 
   "message": "string"
 }
 ```
+
 7. /customers/convertCustomerToAmbassador
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 {
   "customer": {
@@ -171,15 +198,19 @@ Run the command ```node .``` to start the server. This will start the server at 
   "message": "string"
 }
 ```
+
 8./customers/fetchAllAmbassadorChildren
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "customerId": "string"
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 [
   {
@@ -194,16 +225,20 @@ Run the command ```node .``` to start the server. This will start the server at 
   ...
 ]
 ```
+
 9./customers/fetchAllAmbassadorChildrenAtNthLevel
-...Type: POST
-...Request Body: 
+
+Type: POST
+
+Request Body: 
 ```
 {
   "customerId": "string",
   "level": 0
 }
 ```
-...Response Body:
+
+Response Body:
 ```
 [
   {
