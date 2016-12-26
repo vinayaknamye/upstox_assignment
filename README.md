@@ -11,7 +11,7 @@ Run the command ```node .``` to start the server. This will start the server at 
 
 ###API documentation###
 
-1. /customers/addCustomer
+* /customers/addCustomer
 
 Type: POST
 
@@ -38,7 +38,7 @@ Response Body:
 }
 ```
 
-2. /customers/getCustomerById
+* /customers/getCustomerById
 
 Type: POST
 
@@ -62,7 +62,7 @@ Response Body:
 }
 ```
 
-3. /customers/addReferral
+* /customers/addReferral
 
 Type: POST
 
@@ -90,7 +90,7 @@ Response Body:
 }
 ```
 
-4./customers/fetchAllChildren
+* /customers/fetchAllChildren
 
 Type: POST
 
@@ -117,7 +117,7 @@ Response Body:
 ]
 ```
 
-5. /customers/fetchAllCustomerWithReferralCount
+* /customers/fetchAllCustomerWithReferralCount
 
 Type: POST
 
@@ -145,7 +145,7 @@ Response Body:
 ]
 ```
 
-6. /customers/addAmbassador
+* /customers/addAmbassador
 
 Type: POST
 
@@ -172,7 +172,7 @@ Response Body:
 }
 ```
 
-7. /customers/convertCustomerToAmbassador
+* /customers/convertCustomerToAmbassador
 
 Type: POST
 
@@ -199,7 +199,7 @@ Response Body:
 }
 ```
 
-8./customers/fetchAllAmbassadorChildren
+* /customers/fetchAllAmbassadorChildren
 
 Type: POST
 
@@ -226,7 +226,7 @@ Response Body:
 ]
 ```
 
-9./customers/fetchAllAmbassadorChildrenAtNthLevel
+* /customers/fetchAllAmbassadorChildrenAtNthLevel
 
 Type: POST
 
